@@ -42,8 +42,5 @@ friend1.introduce()
 friend2.introduce()
 
 
-classmate1.introduce()
-classmate2.introduce()
-friend1.introduce()
 
-friend2.introduce()
+
