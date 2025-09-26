@@ -1,0 +1,25 @@
+Index: home_work4.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class Vehicle:\r\n    def start(self):\r\n        print('Vehicle starting')\r\n\r\n\r\nclass Car(Vehicle):\r\n    def start(self):\r\n        super().start()\r\n        print('Car starting')\r\n\r\nclass ElectricCar(Vehicle):\r\n    def start(self):\r\n        super().start()\r\n\r\n\r\n\r\nclass Tesla(Car ,ElectricCar):\r\n    def start(self):\r\n        super().start()\r\n        print('Tesla ready')\r\n\r\nprint(Tesla.__mro__)
+===================================================================
+diff --git a/home_work4.py b/home_work4.py
+--- a/home_work4.py	(revision 3782216dc6f5590549d88ed4dd66f853f9404a3a)
++++ b/home_work4.py	(date 1758022105909)
+@@ -2,7 +2,6 @@
+     def start(self):
+         print('Vehicle starting')
+ 
+-
+ class Car(Vehicle):
+     def start(self):
+         super().start()
+@@ -12,8 +11,6 @@
+     def start(self):
+         super().start()
+ 
+-
+-
+ class Tesla(Car ,ElectricCar):
+     def start(self):
+         super().start()
